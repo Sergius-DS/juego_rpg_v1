@@ -11,14 +11,14 @@ class Juego:
         self.inicializar_mundo()
 
     def inicializar_mundo(self):
-        entrada = Lugar("Entrada del Bosque", "Una clara entrada a un misterioso bosque")
-        bosque = Lugar("Bosque Profundo", "Un bosque denso lleno de sombras")
-        cueva = Lugar("Cueva Misteriosa", "Una cueva oscura con ecos extraños")
-        aldea = Lugar("Aldea Pacífica", "Una pequeña aldea con casas de madera")
+        entrada = Lugar("Entrada del Bosque 🌲🚪", "Una clara entrada a un misterioso bosque")
+        bosque = Lugar("Bosque Profundo 🌳🌑", "Un bosque denso lleno de sombras")
+        cueva = Lugar("Cueva Misteriosa 🕷️🕸️", "Una cueva oscura con ecos extraños")
+        aldea = Lugar("Aldea Pacífica 🏡🌻", "Una pequeña aldea con casas de madera")
 
-        espada = Objeto("espada", "Una espada brillante de acero")
-        pocion = Objeto("poción", "una poción de curación de colro verde")
-        llave = Objeto("llave", "Una llave antigua y misteriosa")
+        espada = Objeto("espada", "Una espada brillante de acero", emoji="⚔️")
+        pocion = Objeto("poción", "una poción de curación de color verde", emoji="🧪")
+        llave = Objeto("llave", "Una llave antigua y misteriosa", emoji="🔑")
 
         goblin = Personaje("Goblin", "Grr! No pases por aquí, humano!")
         aldeano = Personaje("Aldeano", "Bienvenido a nuestra humilde aldea")
