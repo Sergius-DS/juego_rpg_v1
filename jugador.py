@@ -8,7 +8,10 @@ class Jugador:
         objeto = self.lugar_actual.quitar_objeto(nombre_objeto)
         if objeto:
             self.inventario.append(objeto)
-            return f"Has recogido: {objeto.nombre}"
+            if objeto.emoji:
+                return f"Has recogido: {objeto.emoji} {objeto.nombre}"
+            else:
+                return f"Has recogido: {objeto.nombre}"
         return f"Non hay ningún '{nombre_objeto}' aquí"
     
     def mostrar_inventario(self):
